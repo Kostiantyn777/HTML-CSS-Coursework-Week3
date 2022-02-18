@@ -1,1 +1,39 @@
 /*  Add your styling here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.4;
+  font-size: 18px;
+}
+.hamburger {
+  display: flex;
+  position: relative;
+  padding: 0.5em;
+}
+
+.hamburger-image {
+  position: absolute;
+  right: 0%;
+  bottom: 10px;
+  height: 45px;
+  width: 50px;
+}
+.hamburger-text {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  position: absolute;
+  right: 0%;
+  top: 50px;
+}
+
+
+/*Media Queries */
+@media screen and (min-width: 540px) {
+    .hamburger-image {
+        display: none;
+      }
+}
