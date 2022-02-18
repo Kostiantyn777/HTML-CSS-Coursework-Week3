@@ -8,6 +8,10 @@ body {
   line-height: 1.4;
   font-size: 18px;
 }
+.navbar {
+  display: none;
+}
+
 .hamburger {
   display: flex;
   position: relative;
@@ -30,10 +34,14 @@ body {
   top: 50px;
 }
 
-
 /*Media Queries */
 @media screen and (min-width: 540px) {
-    .hamburger-image {
-        display: none;
-      }
+  .hamburger-image {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
 }
