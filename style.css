@@ -13,8 +13,8 @@ body {
 }
 
 .hamburger {
-  display: flex;
   position: relative;
+  display: flex;
   padding: 0.5em;
 }
 
@@ -34,6 +34,37 @@ body {
   top: 50px;
 }
 
+.cakes-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.cakes-images div {
+  height: 528px;
+  width: 48%;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.cake-1 {
+  background-image: url("images/california-cake.jpg");
+}
+
+.cake-2 {
+  background-image: url("images/cheesecake.jpg");
+}
+
+.cake-3 {
+  background-image: url("images/strawberry-cake.jpg");
+}
+.cake-4 {
+  background-image: url("images/surprise-cake.jpg");
+}
+
 /*Media Queries */
 @media screen and (min-width: 540px) {
   .hamburger-image {
@@ -43,5 +74,10 @@ body {
     display: flex;
     justify-content: flex-end;
     list-style: none;
+  }
+  .cakes-images div {
+    height: 528px;
+    width: 20%;
+    
   }
 }
