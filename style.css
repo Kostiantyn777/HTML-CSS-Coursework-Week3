@@ -8,6 +8,9 @@ body {
   line-height: 1.4;
   font-size: 18px;
 }
+header {
+  display: flex;
+}
 .navbar {
   display: none;
 }
@@ -19,7 +22,7 @@ body {
 }
 
 .hamburger-image {
-  position: absolute;
+  
   right: 0%;
   bottom: 10px;
   height: 45px;
@@ -67,6 +70,17 @@ body {
 
 /*Media Queries */
 @media screen and (min-width: 540px) {
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 60px;
+  }
+
+  .hamburger-text {
+    font-size: 20px;
+  }
   .hamburger-image {
     display: none;
   }
@@ -75,9 +89,25 @@ body {
     justify-content: flex-end;
     list-style: none;
   }
+  .navbar li {
+    padding: 2em;
+    background: #8ecae6;
+  }
+
+  .navbar li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition: color 0.5s linear;
+  }
+  .navbar a:hover {
+    font-weight: bold;
+    color: #d00000;
+  }
+
   .cakes-images div {
-    height: 528px;
-    width: 20%;
-    
+    height: 300px;
+    width: 23%;
   }
 }
