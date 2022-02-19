@@ -1,9 +1,10 @@
 /*  Add your styling here */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
+  font-family: "Inconsolata", monospace;
 }
 body {
   line-height: 1.4;
@@ -75,6 +76,10 @@ body {
 .cake-4 {
   background-image: url("images/surprise-cake.jpg");
 }
+figcaption {
+  font-size: 22px;
+  color: blue;
+}
 
 /*Media Queries */
 @media screen and (min-width: 540px) {
@@ -122,5 +127,10 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
+  }
+}
+@media screen and (max-width: 415px) {
+  .hamburger-text {
+    display: none;
   }
 }
