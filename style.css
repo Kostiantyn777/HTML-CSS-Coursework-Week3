@@ -49,6 +49,14 @@ body {
   background-position: center;
   text-align: center;
 }
+.welcome-section {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.welcome-section-image {
+  width: 400px;
+  height: 250px;
+}
 
 .cake-1 {
   background-image: url("images/california-cake.jpg");
@@ -106,5 +114,9 @@ body {
   .cakes-images div {
     height: 300px;
     width: 23%;
+  }
+  .welcome-section {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
