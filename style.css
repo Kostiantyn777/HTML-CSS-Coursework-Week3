@@ -80,6 +80,14 @@ figcaption {
   font-size: 22px;
   color: blue;
 }
+button {
+  padding: 10px;
+  background-color: #ade8f4;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /*Media Queries */
 @media screen and (min-width: 540px) {
