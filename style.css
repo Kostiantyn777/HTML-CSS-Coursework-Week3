@@ -83,6 +83,7 @@ figcaption {
 button {
   padding: 10px;
   background-color: #ade8f4;
+  border-radius: 35%;
 }
 footer {
   display: flex;
